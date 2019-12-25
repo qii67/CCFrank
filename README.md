@@ -2,11 +2,12 @@
 
 The Chrome Extension displays the China Computer Federation rankings of conferences and journals in the search results. Currently supports ACM Digital Library, IEEE Xplore Digital Library, and dblp computer science bibliography.
 
-Chrome 扩展程序，在搜索结果中显示中国计算机学会的会议和期刊排名。目前支持 ACM Digital Library、IEEE Xplore Digital Library 和 dblp computer science bibliography。
+Chrome 扩展程序，在搜索结果中显示中国计算机学会的会议和期刊排名。目前支持 ACM Digital Library、IEEE Xplore Digital Library 和 dblp computer science bibliography。在 dblp 中添加了根据 ccf 等级筛选论文的功能，添加了各个会议期刊在CCF中的分类，对于不熟悉会议期刊的同学应该有一定帮助，同时也可以参考学者的期刊论文发表情况~
 
 ## Preview
 
 ![CCFrank on dblp](./img/dblp.png)
+![CCFrank dblp refine-by list](./img/dblp-Refine.png)
 
 
 ## Install

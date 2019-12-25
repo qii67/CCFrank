@@ -19,7 +19,9 @@ ccf.getRankingInfo = function (names) {
                 }
             }
         } else {
-            rankingInfo.info += name.full + ": CCF " + ranking + "\n"
+            let possible = ccf.rankingCate[name.full];
+            rankingInfo.info += name.full + ": " + possible + "\n";
+            // rankingInfo.info += name.full + ": CCF " + ranking + "\n"
         }
         rankingInfo.rankings.push(ranking);
     }

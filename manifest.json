@@ -33,6 +33,7 @@
                 "data/ccfRankingAbbrName.js",
                 "data/ccfRankingFullName.js",
                 "data/ccfRankingDblpName.js",
+                "data/ccfRankingCate.js",
                 "script.js"
             ],
             "css": [

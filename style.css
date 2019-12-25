@@ -55,3 +55,19 @@
     visibility: visible;
 }
 
+button.text1 {
+    display: inline;
+    overflow: visible;
+    text-align: left;
+    color: #7d848a;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+

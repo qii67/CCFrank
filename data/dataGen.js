@@ -615,13 +615,16 @@ const rawRankingString =
 var ccfRankingFullName = {};
 var ccfRankingAbbrName = {};
 var ccfRankingDblpName = {};
+var ccfRankingAbbrCate = {};
 for (x of rawRankingString.split('\n')) {
     y = x.split('\t');
     if (y[1] != "") {
         if (ccfRankingAbbrName[y[1]] == undefined) {
             ccfRankingAbbrName[y[1]] = {};
+            ccfRankingAbbrCate[y[1]] = {};
         }
         ccfRankingAbbrName[y[1]][y[2]] = y[0];
+        ccfRankingAbbrCate[y[1]][y[2]] = y[4];
     }
     ccfRankingFullName[y[2]] = y[0];
     ccfRankingDblpName[y[3]] = y[2];
@@ -631,3 +634,4 @@ const fs = require('fs');
 fs.writeFileSync('ccfRankingAbbrName.js', "ccf.rankingAbbrName = " + JSON.stringify(ccfRankingAbbrName), 'utf8');
 fs.writeFileSync('ccfRankingFullName.js', "ccf.rankingFullName = " + JSON.stringify(ccfRankingFullName), 'utf8');
 fs.writeFileSync('ccfRankingDblpName.js', "ccf.rankingDblpName = " + JSON.stringify(ccfRankingDblpName), 'utf8');
+fs.writeFileSync('ccfRankingAbbrCate.js', "ccf.rankingAbbrCate = " + JSON.stringify(ccfRankingAbbrCate), 'utf8');
